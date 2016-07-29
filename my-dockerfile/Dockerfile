@@ -2,6 +2,6 @@ FROM wnameless/oracle-xe-11g:16.04
 
 MAINTAINER Jerome Jiang <jeromefromcn@@gmail.com>
 
-RUN mkdir /XE && mv /u01/app/oracle/oradata/XE/* /XE
+RUN mkdir /temp && mv /u01/* /temp
 
-CMD mv /XE/* /u01/app/oracle/oradata/XE/ && /usr/sbin/startup.sh && /usr/sbin/sshd -D
+CMD mv /temp/* /u01/ && /usr/sbin/startup.sh && /usr/sbin/sshd -D
