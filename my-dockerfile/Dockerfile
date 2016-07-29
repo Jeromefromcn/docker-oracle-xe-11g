@@ -1,4 +1,4 @@
-FROM wnameless/oracle-xe-11g
+FROM wnameless/oracle-xe-11g:16.04
 
 MAINTAINER Jerome Jiang <jeromefromcn@@gmail.com>
 
